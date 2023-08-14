@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1><center>php test 20181002a</center></h1>
+<form action='php_test.htm' method='get'> 
+ Skip password  <button type="text" onclick="php_test.htm">php_test</button><br>
+</form>
+php create and write newfile.txt
+<?php
+$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+$txt = "John Doe\n";
+fwrite($myfile, $txt);
+$txt = "Jane Doe\n";
+fwrite($myfile, $txt);
+fclose($myfile);
+
+$str = "php Hello world!";
+echo $str;
+?>
+
+
+</body>
+</html>
